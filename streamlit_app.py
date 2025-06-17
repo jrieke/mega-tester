@@ -549,6 +549,10 @@ st.warning("st.warning with icon", icon=":material/home:")
 st.error("st.error")
 st.error("st.error with icon", icon=":material/home:")
 st.exception(RuntimeError("st.exception"))
+try:
+    1/0
+except Exception as e:
+    st.exception(e)
 
 
 "## Execution flow"
