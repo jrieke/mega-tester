@@ -639,8 +639,9 @@ if st.button("st.spinner"):
         time.sleep(3)
         st.write("spinner works if you saw it!")
 
+duration = st.segmented_control("duration", ["short", "long", "infinite"], default="short")
 if st.button("st.toast"):
-    st.toast("Hello there!", icon="🎈")
+    st.toast("Hello there!", icon="🎈", duration=duration)
 
 if st.button("st.balloons"):
     st.balloons()
